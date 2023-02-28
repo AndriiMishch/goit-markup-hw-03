@@ -67,6 +67,34 @@ body {
 .header {
   padding: 24px 0;
 }
+.nav-header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.site-nav {
+  display: flex;
+}
+.logo-first {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--Primary-brand-color);
+  margin-right: 76px;
+  padding-left: 0;
+}
+.site-nav>li:not(:last-child){
+  margin-right: 40px;
+}
+.nav-container {
+  display: flex;
+}
 .logo-header {
   color: var(--Dark-color);
 }
@@ -76,6 +104,13 @@ body {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--Dark-color);
+}
+.additional-nav ul {
+  display: flex;
+  margin-left: 332px;
+}
+.additional-nav ul>li:not(:last-child) {
+  margin-right: 40px;
 }
 .header-contacts {
   font-size: 16px;
@@ -302,7 +337,7 @@ justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.logo-first {
+.logo-foot {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
