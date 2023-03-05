@@ -228,6 +228,8 @@ body {
 .our-team {
   background-color: var(--Light-color);
   margin-top: var(--basic-margin);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-hero {
@@ -237,11 +239,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  width: 164px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 72px;
-  padding-top: 120px;
 }
 .team-member-list {
   display: flex;
@@ -253,7 +253,7 @@ body {
 .team-member-descr-list{
 background-color: var(--Hero-text-color);
 text-align: center;
-margin-bottom: 120px;
+
 }
 .team-member-name {
 padding-top: 32px;
@@ -266,9 +266,11 @@ padding-bottom: 32px;
 /* portfolio */
 
 /* portfolio-btn`s */
+.our-portfolio {
+  padding-top: 96px;
+}
 .portfolio-btn-list {
   display: flex;
-padding-top: 96px;
 margin-bottom: 72px;
 justify-content: center;
 }
@@ -298,6 +300,7 @@ justify-content: center;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border-color: var(--Pressed-state-color);
   color: var(--Hero-text-color);
   cursor: pointer;
 }
@@ -309,13 +312,18 @@ justify-content: center;
 }
 .work-item:not(:nth-child(3n)) {
   margin-right: var(--second-margin);
-  margin-bottom: 48px;
 }
+.work-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 48px; 
+}
+
 
 .work-rec {
   border:  1px solid var(--Accent-color);
+  border-top: 0;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
 }
 .work-dscr {
   font-weight: 500;
